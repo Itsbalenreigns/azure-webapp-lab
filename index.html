@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure Web App Lab</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #0078D4, #00B4DB);
+            color: white;
+        }
+
+        .container{
+            text-align: center;
+            background: rgba(255,255,255,0.1);
+            padding: 50px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            width: 90%;
+            max-width: 600px;
+            animation: fadeIn 1.2s ease;
+        }
+
+        h1{
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        p{
+            font-size: 20px;
+            margin-bottom: 30px;
+            color: #f1f1f1;
+        }
+
+        .btn{
+            display: inline-block;
+            padding: 14px 30px;
+            background: white;
+            color: #0078D4;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover{
+            background: #f1f1f1;
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeIn{
+            from{
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to{
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Azure Web App</h1>
+        <p>
+            Deployment from GitHub successful.<br>
+            Welcome to your beautiful cloud application!
+        </p>
+
+        <a href="https://portal.azure.com" class="btn" target="_blank">
+            Open Azure Portal
+        </a>
+    </div>
+
+</body>
+</html>
